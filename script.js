@@ -1,6 +1,6 @@
-function daysOfAYear(valinput) {
+function daysOfAYear(year) {
     // Convert input to a number
-    const year = Number(valinput);
+    year = Number(year);
     
     // Check if the year is a leap year
     if ((year % 4 === 0 && year % 100 !== 0) || year % 400 === 0) {
@@ -9,7 +9,3 @@ function daysOfAYear(valinput) {
         return 365; // Non-leap year
     }
 }
-
-// Prompt user for input
-const valinput = prompt("Enter a year:");
-alert("Number of days in the year: " + daysOfAYear(valinput));
